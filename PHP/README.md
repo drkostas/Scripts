@@ -1,0 +1,2 @@
+Various PHP scripts that I created and used during the last years.\n
+Some of them are indeed naive and silly by looking back to them after some years, gives you clear picture of the change on your way of thinking.
