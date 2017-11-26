@@ -10,21 +10,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;&->combine keys
 ;-------------------
 
-;restart ShareMouse
+;Close Sublime Window
 Loop
 {
-    WinWait, ShareMouse - Information
-    Process, Exist, ShareMouse.exe
-    If ErrorLevel <> 0
-		Process, Close, ShareMouse.exe
-    Run, C:\Program Files (x86)\ShareMouse\ShareMouse.exe
+    WinWait, This is an unregistered copy
+    WinClose, This is an unregistered copy
 }
-
-;Close ShareMouseWindow
-^F12::
-	Process, Exist, ShareMouse.exe
-	If ErrorLevel <> 0
-	 Process, Close, ShareMouse.exe
-	Else
-	 Run, C:\Program Files (x86)\ShareMouse\ShareMouse.exe
-	return
