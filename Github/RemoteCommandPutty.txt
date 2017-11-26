@@ -1,0 +1,1 @@
+sudo su - -c "cd /path/to/server/public_html ; git pull ; /bin/bash"
