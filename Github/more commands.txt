@@ -1,0 +1,2 @@
+Remove files from a repository based on the .gitignore file (and not delete them from the directory)
+git ls-files -i -X .gitignore | xargs -I{} git rm --cached "{}"
