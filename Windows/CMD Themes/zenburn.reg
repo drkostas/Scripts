@@ -1,0 +1,31 @@
+Windows Registry Editor Version 5.00
+; Zenburn is a low-contrast color scheme
+; for Windows command prompt.
+; See : http://slinky.imukuppi.org/zenburnpage/
+
+; Values stored as 00-BB-GG-RR
+[HKEY_CURRENT_USER\Console]
+; BLACK DGRAY
+"ColorTable00"=dword:003f3f3f
+"ColorTable08"=dword:008080c0
+; BLUE LBLUE
+"ColorTable01"=dword:00af6464
+"ColorTable09"=dword:00ffafaf
+; GREEN LGREEN
+"ColorTable02"=dword:00008000
+"ColorTable10"=dword:007f9f7f
+; CYAN LCYAN
+"ColorTable03"=dword:00808000
+"ColorTable11"=dword:00d3d08c
+; RED LRED
+"ColorTable04"=dword:00232333
+"ColorTable12"=dword:007071e3
+; MAGENTA LMAGENTA
+"ColorTable05"=dword:00aa50aa
+"ColorTable13"=dword:00c880c8
+; YELLOW LYELLOW
+"ColorTable06"=dword:0000dcdc
+"ColorTable14"=dword:00afdff0
+; LGRAY WHITE
+"ColorTable07"=dword:00ccdcdc
+"ColorTable15"=dword:00ffffff

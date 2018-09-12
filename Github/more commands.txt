@@ -1,2 +1,11 @@
-Remove files from a repository based on the .gitignore file (and not delete them from the directory)
+# Remove files from a repository based on the .gitignore file (and not delete them from the directory)
 git ls-files -i -X .gitignore | xargs -I{} git rm --cached "{}"
+
+# Undo last commit (for not pushed commits)
+git reset HEAD~1 --soft
+
+# Undo last 2 commits (for pushed commits)
+git reset --hard HEAD~2
+
+# Remove folder and subfolders, files from a repository's history
+git rm --cached folder/**/*

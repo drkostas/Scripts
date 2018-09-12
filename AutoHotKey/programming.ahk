@@ -10,6 +10,20 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;&->combine keys
 ;-------------------
 
+;alt+tab+up+enter (save file. alt+tab and run last command on cmd)
+^Space::
+Sleep 200
+Send ^{s}
+Sleep 200
+Send {Alt Down}{Tab}
+Sleep 100
+Send {Alt Up}
+Sleep 200
+Send {Up}
+Sleep 200
+Send {Enter}
+return
+
 ;Write colored console.log command(JavaScript)
 +w::
 Send, console.log('`%c ', 'background: dodgerblue; color: yellow');
