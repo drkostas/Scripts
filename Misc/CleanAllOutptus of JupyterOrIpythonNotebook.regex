@@ -1,0 +1,2 @@
+Find: ("text": \[)[\s\S]*?(\]\n)
+Replace: \1\2
