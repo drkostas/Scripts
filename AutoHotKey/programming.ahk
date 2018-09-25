@@ -106,3 +106,25 @@ OpenCmdInCurrent()
     }
 }
 #c::OpenCmdInCurrent()
+
+#IfWinActive ahk_class PX_WINDOW_CLASS
+
+   ;Run opened script
+   #c::
+      Send ^s
+      Sleep 100
+      WinGetTitle, wTitle, ahk_class PX_WINDOW_CLASS
+      StringTrimRight, ScriptPath, wTitle, 12      
+      SplitPath, wTitle,,workingDir  
+      If InStr(wTitle, ".ahk")
+      {    
+         Run, %ScriptPath%, %workingDir%
+      }
+      Else
+      {
+         Run,  "C:\Users\enemy\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt" /K cd /D "%workingDir%"
+    
+      }
+   Return
+
+#If
