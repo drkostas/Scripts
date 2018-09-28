@@ -58,6 +58,12 @@ f12::
     Send {Volume_Up 1}
     return
 
+; Pause Music and then lock
+^#l::
+	Send {Media_Play_pause}
+	DllCall("LockWorkStation")
+	return
+	
 ;Go to left desktop by swiping left the touchpad(should assign it to Browser Back in registry editor)
 Browser_Back::
     SendInput #^{Right}
